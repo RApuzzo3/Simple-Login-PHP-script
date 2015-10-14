@@ -68,14 +68,13 @@ session_start();
 	}
 
 /** 
- * Login and Logout requests
- * If the GLOBAL $_REQUEST equals "logout" then the first
- * if statement is executed. 
- * If the GLOBAL $_REQUEST equals "pwd" (for password) then
- * the second if statement is executed.
+ * Login form - will return if $_SESSION['auth'] is 'incomplete'. 
+ *
+ * When login is successful $_SESSION['auth'] is 'complete'
+ * and the user is redirected to the protected index and test pages.
  */
  
-	$authed = $_SESSION['auth'];
+$authed = $_SESSION['auth'];
 	
 if ($authed !== 'completed') {
 	?><!DOCTYPE html>
