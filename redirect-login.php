@@ -99,9 +99,11 @@ if ($authed !== 'completed') {
 		<?php }?>
       <form class="form-signin" method="post">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="user" class="sr-only">Username</label>
+		
+        <label for="user">Username</label>
         <input class="form-control" type="text" name="usr" id="user" tabindex="1" placeholder="Username" required autofocus><br>
-        <label for="inputPassword" class="sr-only">Password</label>
+		
+        <label for="inputPassword">Password</label>
         <input class="form-control" type="password" name="pwd" id="passwd" tabindex="2" required><br>
 		
         <input class="btn btn-lg btn-primary btn-block" type="submit" id="login" value="Login" tabindex="3" />
